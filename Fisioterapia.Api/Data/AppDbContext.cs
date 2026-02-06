@@ -9,4 +9,7 @@ public class AppDbContext : DbContext
 
     // Esta línea crea la tabla de Pacientes
     public DbSet<Paciente> Pacientes => Set<Paciente>();
+    public DbSet<Servicio> Servicios => Set<Servicio>();
+    public DbSet<Sesion> Sesiones => Set<Sesion>();
+    public DbSet<Usuario> Usuarios => Set<Usuario>();
 }
