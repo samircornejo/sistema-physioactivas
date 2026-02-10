@@ -16,14 +16,12 @@ public class PacientesController : ControllerBase
         _context = context;
     }
 
-    // GET: api/pacientes (Listar todos)
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Paciente>>> GetPacientes()
     {
         return await _context.Pacientes.ToListAsync();
     }
 
-    // POST: api/pacientes (Crear uno nuevo)
     [HttpPost]
     public async Task<ActionResult<Paciente>> PostPaciente(Paciente paciente)
     {
